@@ -1,5 +1,5 @@
 <VirtualHost *:80>
-  SetEnv DOMAIN_NAME = example.com
+  SetEnv DOMAIN_NAME example.com
 
   <If "{DOMAIN_NAME} = example.com">
     Error "You must set the DOMAIN_NAME from example.com to
