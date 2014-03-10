@@ -49,17 +49,18 @@ if (window.parent) {
 
   window.onload = function() {
 
-    //change non-relative links to target top page
+//    change non-relative links to target top page
     var anchors = document.getElementsByTagName('a');
     var absolute = new RegExp('^(?:[a-z]+:)?//', 'i');
     for (var i = 0; i < anchors.length; i++) {
       var a = anchors[i];
 
 
-      if ((fuzzyOrigin(a) !== fuzzyOrigin(window.location)) &&
-        absolute.test(a.origin)) {
-        a.setAttribute('target', '_top');
-      }
+//      if ((fuzzyOrigin(a) !== fuzzyOrigin(window.location)) &&
+//        absolute.test(a.origin)) {
+//        a.setAttribute('target', '_top');
+//      }
+      //turned off for now, must fix local/absolute link issue
 
 
 
